@@ -66,8 +66,6 @@ html, body {
 }
 
 .cubo2{
-    animation-name: slideup;
-    background-color: violet;
     background-color: chartreuse;
 }
 
@@ -133,7 +131,7 @@ animation-duration: 3s;
 
 .Menu ul li:hover{
     background-color: rgb(194, 194, 245);
-    border: 1px solid blue;
+    border: 3px solid blue;
     box-shadow:4px 4px 14px 0px  rgba(224, 19, 19, 0.41);
 }
 
@@ -167,15 +165,12 @@ animation-duration: 3s;
     justify-self: center;
     align-self: center;
     text-align: center;
-    background-color:brown;
+    background-color: #A9ECFF;
     margin: 20px;
-    color: white;
-    border-radius: 25px;
-    transition: transform 3s;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: transform;
 }
 
-.transiciones, .giros{
+.transiciones{
     display: grid;
     width: 99%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -189,14 +184,15 @@ animation-duration: 3s;
 
 @media screen and (min-width:421px) and (max-width:800px) {
 
-    .transiciones, .giros{
+    .transiciones{
         grid-template-columns:1fr 1fr;
 
     }
+
 }
 @media screen and (min-width:375px) and (max-width:420px){
 
-    .transiciones, .giros{
+    .transiciones{
         grid-template-columns:1fr;
 
     }
@@ -251,26 +247,12 @@ animation-duration: 3s;
 }
 
 
-
-
-/* Giros */
+/*Giros*/
 
 .Giro_completo:hover{
-transform: rotate(360deg);
- }
+    transform: rotate(360deg);
+}
 
- .Giro_completo_left:hover{
+.Giro_completo_left:hover{
     transform: rotate(-360deg);
- }
-.Medio-giro:hover{
-    transform: rotate(180deg);
-}
-.Medio_right:hover{
-    transform: rotate(180deg);
-}
-.Medio_left:hover{
-    transform: rotate(-180deg);
-}
-.Infinito:hover{
-    transform: rotate(720deg);
 }
